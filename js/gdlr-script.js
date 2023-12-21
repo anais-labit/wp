@@ -1,3 +1,14 @@
+// Les deux premières lignes servent à définir les variables globales pour utiliser jQuery, qui est une bibliothèque JavaScript pour manipuler le HTML et le CSS.
+// La fonction "search-bar" est appelée lorsque l'utilisateur clique sur l'icône de recherche pour afficher ou masquer la barre de recherche.
+// La fonction "scroll" est appelée lorsque l'utilisateur clique sur un lien de la barre de navigation pour faire défiler la page jusqu'à la section correspondante. La fonction utilise une animation pour faire défiler la page en douceur.
+// La fonction "nav" est appelée lorsque l'utilisateur clique sur un lien de la barre de navigation. La fonction ajoute la classe "active" au lien cliqué et affiche la section correspondante.
+// La fonction "preloader" permet de masquer la fenêtre de chargement après le chargement complet de la page.
+// La fonction "Isotope" est une bibliothèque JavaScript pour filtrer et trier les éléments d'une page. Elle est utilisée pour afficher les projets triés par catégorie.
+// La fonction "Accordion isotope" permet d'ajouter une fonction d'accordéon à la section de filtre Isotope.
+// La fonction "browser detect" permet de détecter le navigateur du visiteur et d'ajouter des fonctionnalités spécifiques en fonction de celui-ci, par exemple la fonction de défilement en douceur pour les utilisateurs de Google Chrome.
+// La fonction "Testimonials" permet d'afficher une liste de témoignages sous forme de diaporama.
+// La fonction "Fancybox" permet d'afficher des images dans une fenêtre contextuelle lorsqu'elles sont cliquées.
+
 /*jshint jquery:true */
 /*global $:true */
 
@@ -10,7 +21,6 @@ $(document).on('ready',function($) {
     $('#search .trigger').on('click', function(){
         $('.search-bar').animate({width: 'toggle'},500);
     });
-	
 
 	/*-------------------------------------------------*/
 	/* =  Main Nav 

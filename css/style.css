@@ -321,7 +321,10 @@ h6 {
 /*--- structure ---*/
 .container {
   padding: 0px;
-  margin: 0px auto; /* position: relative; */
+  margin: 0px auto;
+  /* display: flex;
+  justify-content: center; */
+  /* position: relative; */
 }
 .column,
 .columns {
@@ -679,8 +682,8 @@ img.gdlr-full-boxed-background {
 }
 .gdlr-logo {
   float: left;
-  margin-left: 15px;
-  margin-right: 5px;
+  margin-left: -90px;
+  margin-right: 15px;
 }
 .gdlr-logo h1 {
   margin-bottom: 0px;
@@ -717,12 +720,12 @@ img.gdlr-full-boxed-background {
   padding-top: 15px;
 }
 .gdlr-navigation-wrapper .gdlr-main-menu > li > a {
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   padding: 0px 0px 38px 0px;
   margin: 0px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 .gdlr-navigation-wrapper .gdlr-main-menu > li:first-child > a {
   padding-left: 0px;
@@ -5135,17 +5138,194 @@ ul.gdlr-twitter-widget li .gdlr-twitter-time {
 }
 
 .legend img {
-  width: auto;
-  height: 130px;
+  width: 100px;
+  height: fit-content;
   border-radius: 20px;
   padding-bottom: 10px;
 }
 
 .legend {
-  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #authorContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.section-text,
+.citation-text {
+  font-size: 16px;
+  text-align: justify;
+}
+/* Style pour les nouvelles cards avec chiffres */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  background-color: #e5a438;
+  color: #fff;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body p {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.card-formation {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.citation-text {
+  color: #e0a138;
+}
+
+.card-formation li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.card-formation li {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.card-formation li:hover {
+  background-color: #1b76c5;
+  color: white;
+  transform: scale(1.02);
+}
+
+.registration-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #e5e5e5;
+}
+
+.registration-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #e50019;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.registration-button:hover {
+  background-color: #a1301e;
+}
+
+
+#quote {
+    text-align: center;
+    padding: 2%; /* Add padding as a percentage of the container width */
+}
+
+
+#quote p {
+  color: white !important;
+  font-size: 2vw; /* Set font size in viewport width units */
+  /* margin: 0; */
+
+  /* margin: 0; */
+  /* Media query for smaller screens (mobile) */
+  @media screen and (max-width: 768px) {
+  }
+  font-size: 0.8rem; /* Adjust font size for smaller screens */
+  padding-right: 55px;
+}
+
+/* Media query for larger screens (desktop) */
+@media screen and (min-width: 769px) {
+  #quote p {
+    font-size: 1.5rem; /* Adjust font size for larger screens */
+    
+  }
+}
+#quote p {
+  color: white !important;
+  font-size: 2vw; /* Set font size in viewport width units */
+  /* margin: 0; */
+
+  /* margin: 0; */
+  /* Media query for smaller screens (mobile) */
+  @media screen and (max-width: 768px) {
+  }
+  font-size: 0.8rem; /* Adjust font size for smaller screens */
+  padding-right: 55px;
+}
+
+/* Media query for larger screens (desktop) */
+@media screen and (min-width: 769px) {
+  #quote p:nth-child(1) {
+    font-size: 1.5rem; /* Adjust font size for larger screens */
+    
+  }
+  .arrow-down {
+    display: none;
+  }
+}
+
+
+#heroImage {
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+/* Media query for smaller screens (mobile) */
+@media screen and (max-width: 768px) {
+    #logo {
+        width: 15% !important; /* Adjust width for smaller screens */
+    }
+    
+
+
+    #contactBtn {
+        width: 90% !important; /* Adjust width for smaller screens */
+        /* display: none;  */
+    }
 }

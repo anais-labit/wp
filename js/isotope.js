@@ -1,3 +1,8 @@
+// Ce script permet de filtrer et de trier des éléments d'une page web en utilisant le plugin Isotope pour jQuery.
+// Le plugin Isotope permet d'organiser et de filtrer des éléments de façon dynamique avec un filtrage, une recherche et un tri rapides et fluides. 
+// Il peut être utilisé pour afficher des portfolios, des galeries d'images, des listes d'articles, etc.
+
+
 /*jshint jquery:true */
 /*global $:true */
 

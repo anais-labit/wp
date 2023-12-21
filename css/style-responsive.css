@@ -106,7 +106,8 @@ html body {
     display: none;
   }
 
-  .one-fifth {
+  .one-fifth
+ {
     width: 50%;
   }
 }
@@ -368,9 +369,6 @@ html body {
   }
   .copyright-left {
     margin-bottom: 10px;
-  }
-  #authorContainer {
-    flex-direction: column;
   }
 }
 

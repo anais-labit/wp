@@ -3,7 +3,7 @@
         'name' => 'anais/cea',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '98e8c558b3be8042f77e4f04ea7a2647290d93bb',
+        'reference' => '65cf63e48052accd261291e4200ab7a0f55d2aae',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'anais/cea' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '98e8c558b3be8042f77e4f04ea7a2647290d93bb',
+            'reference' => '65cf63e48052accd261291e4200ab7a0f55d2aae',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
