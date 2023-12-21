@@ -5329,3 +5329,8 @@ ul.gdlr-twitter-widget li .gdlr-twitter-time {
         /* display: none;  */
     }
 }
+
+#contactLogo {
+  width: 140px !important;
+  height: 140px !important;
+}
